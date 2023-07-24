@@ -212,7 +212,7 @@ classifier = pipeline(
 
 We can then pass the audio through our classifier and generate a prediction:
 ```python
-classifier(sample["audio"])
+classifier(sample["audio"]["array"])
 ```
 **Output:**
 ```
