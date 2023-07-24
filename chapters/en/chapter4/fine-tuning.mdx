@@ -109,6 +109,8 @@ This label looks correct, since it matches the filename of the audio file. Let's
 using Gradio to create a simple interface with the `Blocks` API:
 
 ```python
+import gradio as gr
+
 def generate_audio():
     example = gtzan["train"].shuffle()[0]
     audio = example["audio"]
